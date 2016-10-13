@@ -27535,16 +27535,259 @@
 	var Router = __webpack_require__(172);
 
 	var Main = React.createClass({
-		displayName: 'Main',
+	  displayName: 'Main',
 
-		render: function render() {
+	  render: function render() {
 
-			return React.createElement(
-				'div',
-				{ className: 'main-container' },
-				'Hello world!'
-			);
-		}
+	    return React.createElement(
+	      'div',
+	      { className: 'main-container' },
+	      React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	          'header',
+	          { className: 'header' },
+	          React.createElement(
+	            'div',
+	            { className: 'inside' },
+	            React.createElement(
+	              'div',
+	              { className: 'logo-area-inside' },
+	              React.createElement(
+	                'a',
+	                { href: 'index.html', className: 'logo' },
+	                'Tyler Fallon'
+	              ),
+	              React.createElement(
+	                'h4',
+	                { className: 'about-me-tyler' },
+	                'Full Stack Web Developer'
+	              )
+	            ),
+	            React.createElement('div', { className: 'triangle' }),
+	            React.createElement(
+	              'nav',
+	              { className: 'main-nav' },
+	              React.createElement(
+	                'a',
+	                { href: 'index.html', className: 'alt-logo' },
+	                'Tyler Fallon'
+	              ),
+	              React.createElement(
+	                'ul',
+	                null,
+	                React.createElement(
+	                  'li',
+	                  { className: 'selected' },
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/search' },
+	                    'Portfolio'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/saved' },
+	                    'Contact'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: 'https://github.com/tylerfallon' },
+	                    'Github'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'section',
+	          { className: 'main-content cf' },
+	          React.createElement(
+	            'h1',
+	            { className: 'portfolio-title' },
+	            'Po',
+	            React.createElement(
+	              'span',
+	              null,
+	              'rtfolio'
+	            )
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'inside-portfolio' },
+	            React.createElement(
+	              'ul',
+	              { className: 'portfolio-items' },
+	              React.createElement(
+	                'li',
+	                { id: 'demuxed', className: 'portfolio-item multiple cf' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'text' },
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Questive'
+	                  ),
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'skills' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Branding'
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Web design'
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Illustration'
+	                    )
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Description here'
+	                  ),
+	                  React.createElement(
+	                    'a',
+	                    { href: 'https://link.com/', className: 'action' },
+	                    'Visit site'
+	                  )
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                { id: 'love-hate', className: 'portfolio-item multiple cf' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'text' },
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Impulsion.io'
+	                  ),
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'skills' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Backend Web Development'
+	                    )
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Description here'
+	                  ),
+	                  React.createElement(
+	                    'a',
+	                    { href: 'https://link.com/', className: 'action' },
+	                    'Visit site'
+	                  )
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                { id: 'mixture', className: 'portfolio-item multiple cf' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'text' },
+	                  React.createElement(
+	                    'h3',
+	                    null,
+	                    'Proconnect'
+	                  ),
+	                  React.createElement(
+	                    'ul',
+	                    { className: 'skills' },
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Web design'
+	                    ),
+	                    React.createElement(
+	                      'li',
+	                      null,
+	                      'Frontend Web Development'
+	                    )
+	                  ),
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Description here'
+	                  ),
+	                  React.createElement(
+	                    'a',
+	                    { href: 'http://mixture.io/', className: 'action' },
+	                    'View site'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'footer',
+	          { className: 'footer' },
+	          React.createElement(
+	            'div',
+	            { className: 'inside cf' },
+	            React.createElement(
+	              'nav',
+	              { className: 'footer-nav cf' },
+	              React.createElement(
+	                'ul',
+	                null,
+	                React.createElement(
+	                  'li',
+	                  { className: 'selected' },
+	                  React.createElement(
+	                    'a',
+	                    { href: 'index.html' },
+	                    'Portfolio'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: 'about.html' },
+	                    'About'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: 'mailto:tylermfallonh@gmail.com' },
+	                    'Contact'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      '); } });'
+	    );
+	  }
 	});
 	module.exports = Main;
 
