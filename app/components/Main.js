@@ -6,7 +6,7 @@ var Main = React.createClass({
 		return(
 			<div className="main-container">
 				<div className="container">
-					{/*Navbar*/}
+					{/*
 					<nav className="navbar navbar-default" role="navigation">
 						<div className="container-fluid">
 							<div className="navbar-header">
@@ -26,6 +26,7 @@ var Main = React.createClass({
 							</div>
 						</div>
 					</nav>
+					*/}
 				{this.props.children}
 				</div>
 			</div>

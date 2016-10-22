@@ -27438,61 +27438,6 @@
 				React.createElement(
 					'div',
 					{ className: 'container' },
-					React.createElement(
-						'nav',
-						{ className: 'navbar navbar-default', role: 'navigation' },
-						React.createElement(
-							'div',
-							{ className: 'container-fluid' },
-							React.createElement(
-								'div',
-								{ className: 'navbar-header' },
-								React.createElement(
-									'button',
-									{ type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '.navbar-ex1-collapse' },
-									React.createElement(
-										'span',
-										{ className: 'sr-only' },
-										'Toggle navigation'
-									),
-									React.createElement('span', { className: 'icon-bar' }),
-									React.createElement('span', { className: 'icon-bar' }),
-									React.createElement('span', { className: 'icon-bar' })
-								),
-								React.createElement(
-									'a',
-									{ className: 'navbar-brand', href: '#' },
-									'Tyler Fallon'
-								)
-							),
-							React.createElement(
-								'div',
-								{ className: 'collapse navbar-collapse navbar-ex1-collapse' },
-								React.createElement(
-									'ul',
-									{ className: 'nav navbar-nav navbar-right' },
-									React.createElement(
-										'li',
-										null,
-										React.createElement(
-											'a',
-											{ href: '#/search' },
-											'Porfolio'
-										)
-									),
-									React.createElement(
-										'li',
-										null,
-										React.createElement(
-											'a',
-											{ href: '#/saved' },
-											'Contact'
-										)
-									)
-								)
-							)
-						)
-					),
 					this.props.children
 				)
 			);
@@ -27511,16 +27456,381 @@
 	var Router = __webpack_require__(172);
 
 	var Search = React.createClass({
-		displayName: 'Search',
+	  displayName: 'Search',
 
-		render: function render() {
+	  render: function render() {
 
-			return React.createElement(
-				'div',
-				{ className: 'main-container' },
-				'Hello world'
-			);
-		}
+	    return React.createElement(
+	      'div',
+	      { className: 'main-container' },
+	      React.createElement(
+	        'header',
+	        { className: 'header' },
+	        React.createElement(
+	          'div',
+	          { className: 'inside' },
+	          React.createElement(
+	            'div',
+	            { className: 'logo-area-inside' },
+	            React.createElement(
+	              'a',
+	              { href: 'index.html', className: 'logo' },
+	              'Tyler Fallon'
+	            ),
+	            React.createElement(
+	              'h4',
+	              { className: 'about-me-tyler' },
+	              'Full Stack Web Developer'
+	            ),
+	            React.createElement('img', { src: './images/tylerfallonheadshot.png', width: '50%' })
+	          ),
+	          React.createElement('div', { className: 'triangle' }),
+	          React.createElement(
+	            'nav',
+	            { className: 'main-nav' },
+	            React.createElement(
+	              'a',
+	              { href: 'index.html', className: 'alt-logo' },
+	              'Tyler Fallon'
+	            ),
+	            React.createElement(
+	              'ul',
+	              null,
+	              React.createElement(
+	                'li',
+	                { className: 'selected' },
+	                React.createElement(
+	                  'a',
+	                  { href: '#/search' },
+	                  'Portfolio'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                  'a',
+	                  { href: '#/saved' },
+	                  'Contact'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                  'a',
+	                  { href: 'https://github.com/tylerfallon' },
+	                  'Github'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      React.createElement(
+	        'section',
+	        { className: 'main-content cf' },
+	        React.createElement(
+	          'div',
+	          { className: 'aboutMe' },
+	          React.createElement(
+	            'div',
+	            { className: 'titleAbout' },
+	            'About Me'
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'descriptionAbout' },
+	            'Hello, my name is Tyler Fallon. For my entire life, I have had the mentality of a "builder". At an early age, I became acquainted with HTML and CSS, along with Adobe Creative Suites, which allowed me to create and manage a relatively large-scale forum. I have a passion for surfing and electronic music, which I have been producing as a hobby for the past 6 years.'
+	          )
+	        ),
+	        React.createElement(
+	          'h1',
+	          { className: 'portfolio-title' },
+	          'P',
+	          React.createElement(
+	            'span',
+	            null,
+	            'ortfolio'
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'inside-portfolio' },
+	          React.createElement(
+	            'ul',
+	            { className: 'portfolio-items' },
+	            React.createElement(
+	              'li',
+	              { id: 'questive', className: 'portfolio-item multiple cf' },
+	              React.createElement(
+	                'div',
+	                { className: 'text' },
+	                React.createElement(
+	                  'h3',
+	                  null,
+	                  'Questive'
+	                ),
+	                React.createElement(
+	                  'ul',
+	                  { className: 'skills' },
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    'ReactJS'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' PassportJS Authentication'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' jQuery'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' MongoDB'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' ExpressJS'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' NodeJS'
+	                  )
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'Test Description'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'Stuff I did'
+	                ),
+	                React.createElement(
+	                  'a',
+	                  { href: 'https://questiveapp.herokuapp.com/', className: 'action' },
+	                  'Visit site'
+	                )
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'additional-portfolio-image' },
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('img', { src: './images/questive1.png', height: '200px', width: '400px' }),
+	                React.createElement('img', { src: './images/questive2.png', height: '200px', width: '400px' })
+	              )
+	            ),
+	            React.createElement(
+	              'li',
+	              { id: 'impulsion', className: 'portfolio-item multiple cf' },
+	              React.createElement(
+	                'div',
+	                { className: 'text' },
+	                React.createElement(
+	                  'h3',
+	                  null,
+	                  'Impulsion'
+	                ),
+	                React.createElement(
+	                  'ul',
+	                  { className: 'skills' },
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    'NodeJS'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' MySQL/Sequelize'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Handlebars'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' jQuery'
+	                  )
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'Description here'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'More here.'
+	                ),
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://impulsion.herokuapp.com/', className: 'action' },
+	                  'Visit site'
+	                )
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'additional-portfolio-image' },
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('img', { src: './images/impulsion.png', height: '200px', width: '400px' }),
+	                React.createElement('img', { src: './images/impulsion2.png', height: '200px', width: '400px' })
+	              )
+	            ),
+	            React.createElement(
+	              'li',
+	              { id: 'proconnect', className: 'portfolio-item multiple cf' },
+	              React.createElement(
+	                'div',
+	                { className: 'text' },
+	                React.createElement(
+	                  'h3',
+	                  null,
+	                  'ProConnect'
+	                ),
+	                React.createElement(
+	                  'ul',
+	                  { className: 'skills' },
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    'jQuery/Ajax'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Bootstrap'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Google Maps API'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Soundcloud API'
+	                  )
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'More here'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'Description'
+	                ),
+	                React.createElement(
+	                  'a',
+	                  { href: 'http://proconnect1.herokuapp.com/', className: 'action' },
+	                  'Visit site'
+	                )
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'additional-portfolio-image' },
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('br', null),
+	                React.createElement('img', { src: './images/proconnect1.png', height: '200px', width: '400px' }),
+	                React.createElement('img', { src: './images/proconnect2.png', height: '200px', width: '400px' })
+	              )
+	            )
+	          )
+	        )
+	      ),
+	      React.createElement(
+	        'footer',
+	        { className: 'footer' },
+	        React.createElement(
+	          'div',
+	          { className: 'inside cf' },
+	          React.createElement(
+	            'nav',
+	            { className: 'footer-nav cf' },
+	            React.createElement(
+	              'ul',
+	              null,
+	              React.createElement(
+	                'li',
+	                { className: 'selected' },
+	                React.createElement(
+	                  'a',
+	                  { href: 'index.html' },
+	                  'Portfolio'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                  'a',
+	                  { href: 'about.html' },
+	                  'About'
+	                )
+	              ),
+	              React.createElement(
+	                'li',
+	                null,
+	                React.createElement(
+	                  'a',
+	                  { href: 'mailto:tylermfallonh@gmail.com' },
+	                  'Contact'
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
 	});
 
 	module.exports = Search;
@@ -27614,11 +27924,11 @@
 	          React.createElement(
 	            'h1',
 	            { className: 'portfolio-title' },
-	            'Po',
+	            'C',
 	            React.createElement(
 	              'span',
 	              null,
-	              'rtfolio'
+	              'ontact'
 	            )
 	          ),
 	          React.createElement(
@@ -27784,11 +28094,11 @@
 	            )
 	          )
 	        )
-	      ),
-	      '); } });'
+	      )
 	    );
 	  }
 	});
+
 	module.exports = Main;
 
 /***/ }
