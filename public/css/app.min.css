@@ -162,9 +162,10 @@ body {
     color: #eeeddf;
     top: 100px;
     margin-top: 200px;
+    margin-left: -10px;
 }
 .portfolio-title span {
-    color: #fff
+    color: #fff;
 }
 
 .portfolio-items {
@@ -595,7 +596,7 @@ body {
 .logo {
     font-family: proxima-nova, sans-serif;
     font-weight: 600;
-    font-size: 2.8em;
+    font-size: 2.2em;
     letter-spacing: .5em;
     color: #e06245;
     text-transform: uppercase;

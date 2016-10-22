@@ -3,7 +3,7 @@
         font-size: 9px
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .triangle {
         border-left: 0 solid transparent;
         border-right: 1550px solid transparent;
@@ -13,13 +13,20 @@
         font-size: 1.6em
     }
     .portfolio-title {
-        font-size: 6em
+        font-size: 6em;
+        margin-left: -65px;
     }
     .portfolio-items>li .text {
         width: 45%
     }
+
+    .aboutMe {
+        width: 300px;
+        font-size: 0.9em;
+    }
+
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     .header {
         margin-top: 0
     }
@@ -37,12 +44,19 @@
         padding-left: 0
     }
     .portfolio-title {
-        font-size: 4em;
+        font-size: 2em;
         position: static;
-        margin-top: 5%;
         text-align: center;
-        color: #fff;
-        display: none
+        color: #606060;
+        font-size: 3.0em;
+        margin-left: 0px;
+        margin-top: 300px;
+        margin-bottom: -150px;
+    }
+
+     .portfolio-title span {
+        color: #606060;
+        font-size: 0.9em;
     }
     .portfolio-items {
         padding-top: 5%;
@@ -57,7 +71,7 @@
         border: 0
     }
     .portfolio-items>li:first-child .text {
-        margin-top: 0
+        margin-top: 200px;
     }
     .portfolio-items>li .portfolio-image,
     .portfolio-items>li .additional-portfolio-image {
@@ -160,6 +174,11 @@
     .paging {
         margin-bottom: 10%;
         border-bottom: solid 3px rgba(0, 0, 0, .05)
+    }
+
+    .aboutMe {
+        width: 85%;
+        text-align: center;
     }
 }
 @media screen and (max-width: 600px) {
