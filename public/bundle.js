@@ -27608,12 +27608,17 @@
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'Test Description'
+	                  'Questive is a web application that allows users to create, share, and join unique scavenger hunts that can be played in the real world.'
 	                ),
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'Stuff I did'
+	                  'I worked extensively on the front end, using React to create a simple, sleek design that is responsive on larger screens and mobile devices.'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'The MERN Stack (MongoDB, ExpressJS, ReactJS, and NodeJS) and PassportJS authentication were used on the back end to ensure user information is stored in a safe and effective manner.'
 	                ),
 	                React.createElement(
 	                  'a',
@@ -27670,7 +27675,7 @@
 	                  React.createElement(
 	                    'li',
 	                    null,
-	                    'NodeJS'
+	                    'NodeJS with Express Templating'
 	                  ),
 	                  React.createElement(
 	                    'li',
@@ -27686,17 +27691,42 @@
 	                    'li',
 	                    null,
 	                    ' jQuery'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Materialize'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Cheerio/Web Scraping'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Firebase'
 	                  )
 	                ),
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'Description here'
+	                  'Impulsion lets users work with one another to break unwanted habits.'
 	                ),
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'More here.'
+	                  'Users can log the number of days they have been free of their habit of choice, and earn achievements for doing so.'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'I developed a chat room using jQuery and Firebase to allow users to communicate with one another, embedded in the sidebar of the home page once a user logs in.'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'User "streaks" and achievements are stored a MySQL database, managed through Sequelize.'
 	                ),
 	                React.createElement(
 	                  'a',
@@ -27751,17 +27781,27 @@
 	                    'li',
 	                    null,
 	                    ' Soundcloud API'
+	                  ),
+	                  React.createElement(
+	                    'li',
+	                    null,
+	                    ' Firebase'
 	                  )
 	                ),
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'More here'
+	                  'ProConnect allows music producers to easily find other music producers to collaborate with in their area.'
 	                ),
 	                React.createElement(
 	                  'p',
 	                  null,
-	                  'Description'
+	                  'The app uses the Soundcloud API to fetch each user\'s soundcloud page and embed their recent productions on our page.'
+	                ),
+	                React.createElement(
+	                  'p',
+	                  null,
+	                  'Users can search through the user database and find users in their city using a Firebase-powered search field.'
 	                ),
 	                React.createElement(
 	                  'a',

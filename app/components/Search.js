@@ -46,8 +46,9 @@ var Search = React.createClass({
                   <li> ExpressJS</li>
                   <li> NodeJS</li>
                 </ul>
-                <p>Test Description</p>   
-                <p>Stuff I did</p>
+                <p>Questive is a web application that allows users to create, share, and join unique scavenger hunts that can be played in the real world.</p>   
+                <p>I worked extensively on the front end, using React to create a simple, sleek design that is responsive on larger screens and mobile devices.</p>
+                <p>The MERN Stack (MongoDB, ExpressJS, ReactJS, and NodeJS) and PassportJS authentication were used on the back end to ensure user information is stored in a safe and effective manner.</p>
                 <a href="https://questiveapp.herokuapp.com/" className="action">Visit site</a>
               </div>
               <div className="additional-portfolio-image">
@@ -60,13 +61,18 @@ var Search = React.createClass({
               <div className="text">
                 <h3>Impulsion</h3>
                 <ul className="skills">
-                  <li>NodeJS</li>
+                  <li>NodeJS with Express Templating</li>
                   <li> MySQL/Sequelize</li>
                   <li> Handlebars</li>
                   <li> jQuery</li>
+                  <li> Materialize</li>
+                  <li> Cheerio/Web Scraping</li>
+                  <li> Firebase</li>
                 </ul>
-                <p>Description here</p>
-                <p>More here.</p>
+                <p>Impulsion lets users work with one another to break unwanted habits.</p>
+                <p>Users can log the number of days they have been free of their habit of choice, and earn achievements for doing so.</p>
+                <p>I developed a chat room using jQuery and Firebase to allow users to communicate with one another, embedded in the sidebar of the home page once a user logs in.</p>
+                <p>User "streaks" and achievements are stored a MySQL database, managed through Sequelize.</p>
                 <a href="http://impulsion.herokuapp.com/" className="action">Visit site</a>
               </div>
               <div className="additional-portfolio-image">
@@ -84,10 +90,11 @@ var Search = React.createClass({
                   <li> Bootstrap</li>
                   <li> Google Maps API</li>
                   <li> Soundcloud API</li>
+                  <li> Firebase</li>
                 </ul>
-                <p>More here</p> 
-                <p>Description</p>
-                    
+                <p>ProConnect allows music producers to easily find other music producers to collaborate with in their area.</p> 
+                <p>The app uses the Soundcloud API to fetch each user's soundcloud page and embed their recent productions on our page.</p>
+                <p>Users can search through the user database and find users in their city using a Firebase-powered search field.</p>
                 <a href="http://proconnect1.herokuapp.com/" className="action">Visit site</a>
               </div>
               <div className="additional-portfolio-image">
