@@ -1057,7 +1057,7 @@ img {
 .aboutMe {
     margin-top: 50px;
     text-align: right;
-    width: 500px;
+    width: 475px;
     position: absolute;
     right: 50px;
 }
@@ -1073,7 +1073,11 @@ img {
 }
 .descriptionAbout {
     font-family: ff-tisa-web-pro, Georgia, Times, "Times New Roman", serif;
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-bottom: 0.2em;
     line-height: 2em;
 }
+
+ .theGrid {
+        margin-top: 500px;
+    }

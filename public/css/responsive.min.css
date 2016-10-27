@@ -180,6 +180,10 @@
         width: 85%;
         text-align: center;
     }
+
+    .theGrid {
+        margin-top: 200px;
+    }
 }
 @media screen and (max-width: 600px) {
     .inside,
@@ -302,5 +306,13 @@
     }
     .about-sidebar .my-links {
         padding-left: 0
+    }
+
+    .portfolio-title {
+        margin-top: 400px;
+    }
+    .aboutMe {
+        width: 85%;
+        text-align: center;
     }
 }

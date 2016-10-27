@@ -4,11 +4,12 @@ var Router = require('react-router');
 var Portfolio = React.createClass({
 	render: function(){
 		return(
-			<div className="main-container"> 
+	<div className="main-container"> 
     <section className="main-content cf">  
-    <div className='aboutMe'>
+  <div className='aboutMe'>
     <div className='titleAbout'>About Me</div>
-    <div className='descriptionAbout'>Hello, my name is Tyler Fallon. For my entire life, I have had the mentality of a "builder". At an early age, I became acquainted with HTML and CSS, along with Adobe Creative Suites, which allowed me to create and manage a relatively large-scale forum. I have a passion for surfing and electronic music, which I have been producing as a hobby for the past 6 years.</div>
+    <div className='descriptionAbout'>For as long as I can remember, I have always loved to build. I found my passion for computers and development at the age of 12 and started building websites and forums using HTML and CSS. Over the next few years my knowledge of web development grew larger, and I quickly picked up other useful skills such as graphic design, music production and video production.
+A year after graduating from the University of Maryland, I enrolled in Rutgers Coding Bootcamp and continued learning all I could about computer science. To me, one of the biggest allures of this field is the unique ability to work with others to bring complex ideas to life. As a developer, I look forward to a career of rewarding experiences, tough challenges, and lifelong learning.</div>
   </div>  
        <h1 className="portfolio-title">P<span>ortfolio</span></h1>
         <div className="inside-portfolio">
