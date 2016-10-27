@@ -10,8 +10,8 @@ var IndexRoute	= Router.IndexRoute;
 
 // Reference the high-level components
 var Main = require('../components/Main');
-var Search = require('../components/Search'); 
-var Saved = require('../components/Saved'); 
+var Portfolio = require('../components/Portfolio'); 
+var Contact = require('../components/Contact'); 
 
 
 // Export the Routes
@@ -21,11 +21,11 @@ module.exports = (
 	<Route path='/' component={Main}>
 
 		{/* If user selects Search or Saved show the appropriate component*/}
-		<Route path='Search' component={Search} />
-		<Route path='Saved' component={Saved} />
+		<Route path='Portfolio' component={Portfolio} />
+		<Route path='Contact' component={Contact} />
 
 		{/*If user selects any other path... we get the Home Route*/}
-		<IndexRoute component={Search} />
+		<IndexRoute component={Portfolio} />
 
 	</Route>
 

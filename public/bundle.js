@@ -27407,16 +27407,16 @@
 
 	// Reference the high-level components
 	var Main = __webpack_require__(236);
-	var Search = __webpack_require__(237);
-	var Saved = __webpack_require__(238);
+	var Portfolio = __webpack_require__(239);
+	var Contact = __webpack_require__(240);
 
 	// Export the Routes
 	module.exports = React.createElement(
 		Route,
 		{ path: '/', component: Main },
-		React.createElement(Route, { path: 'Search', component: Search }),
-		React.createElement(Route, { path: 'Saved', component: Saved }),
-		React.createElement(IndexRoute, { component: Search })
+		React.createElement(Route, { path: 'Portfolio', component: Portfolio }),
+		React.createElement(Route, { path: 'Contact', component: Contact }),
+		React.createElement(IndexRoute, { component: Portfolio })
 	);
 
 /***/ },
@@ -27428,26 +27428,126 @@
 	var React = __webpack_require__(1);
 	var Router = __webpack_require__(172);
 	var Main = React.createClass({
-		displayName: 'Main',
+	  displayName: 'Main',
 
 
-		render: function render() {
-			return React.createElement(
-				'div',
-				{ className: 'main-container' },
-				React.createElement(
-					'div',
-					{ className: 'container' },
-					this.props.children
-				)
-			);
-		}
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      { className: 'main-container' },
+	      React.createElement(
+	        'div',
+	        { className: 'container' },
+	        React.createElement(
+	          'header',
+	          { className: 'header' },
+	          React.createElement(
+	            'div',
+	            { className: 'inside' },
+	            React.createElement(
+	              'div',
+	              { className: 'logo-area-inside' },
+	              React.createElement(
+	                'a',
+	                { href: '#/portfolio', className: 'logo' },
+	                'Tyler Fallon'
+	              ),
+	              React.createElement(
+	                'h4',
+	                { className: 'about-me-tyler' },
+	                'Full Stack Web Developer'
+	              ),
+	              React.createElement('img', { src: './images/tylerfallonheadshot.png', width: '50%' })
+	            ),
+	            React.createElement('div', { className: 'triangle' }),
+	            React.createElement(
+	              'nav',
+	              { className: 'main-nav' },
+	              React.createElement(
+	                'a',
+	                { href: 'index.html', className: 'alt-logo' },
+	                'Tyler Fallon'
+	              ),
+	              React.createElement(
+	                'ul',
+	                null,
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/portfolio' },
+	                    'Portfolio'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/contact' },
+	                    'Contact'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: 'https://github.com/tylerfallon' },
+	                    'Github'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        this.props.children,
+	        React.createElement(
+	          'footer',
+	          { className: 'footer' },
+	          React.createElement(
+	            'div',
+	            { className: 'inside cf' },
+	            React.createElement(
+	              'nav',
+	              { className: 'footer-nav cf' },
+	              React.createElement(
+	                'ul',
+	                null,
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/portfolio' },
+	                    'Portfolio'
+	                  )
+	                ),
+	                React.createElement(
+	                  'li',
+	                  null,
+	                  React.createElement(
+	                    'a',
+	                    { href: '#/contact' },
+	                    'Contact'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
 	});
 
 	module.exports = Main;
 
 /***/ },
-/* 237 */
+/* 237 */,
+/* 238 */,
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27455,78 +27555,13 @@
 	var React = __webpack_require__(1);
 	var Router = __webpack_require__(172);
 
-	var Search = React.createClass({
-	  displayName: 'Search',
+	var Portfolio = React.createClass({
+	  displayName: 'Portfolio',
 
 	  render: function render() {
-
 	    return React.createElement(
 	      'div',
 	      { className: 'main-container' },
-	      React.createElement(
-	        'header',
-	        { className: 'header' },
-	        React.createElement(
-	          'div',
-	          { className: 'inside' },
-	          React.createElement(
-	            'div',
-	            { className: 'logo-area-inside' },
-	            React.createElement(
-	              'a',
-	              { href: 'index.html', className: 'logo' },
-	              'Tyler Fallon'
-	            ),
-	            React.createElement(
-	              'h4',
-	              { className: 'about-me-tyler' },
-	              'Full Stack Web Developer'
-	            ),
-	            React.createElement('img', { src: './images/tylerfallonheadshot.png', width: '50%' })
-	          ),
-	          React.createElement('div', { className: 'triangle' }),
-	          React.createElement(
-	            'nav',
-	            { className: 'main-nav' },
-	            React.createElement(
-	              'a',
-	              { href: 'index.html', className: 'alt-logo' },
-	              'Tyler Fallon'
-	            ),
-	            React.createElement(
-	              'ul',
-	              null,
-	              React.createElement(
-	                'li',
-	                { className: 'selected' },
-	                React.createElement(
-	                  'a',
-	                  { href: '#/search' },
-	                  'Portfolio'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: '#/saved' },
-	                  'Contact'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: 'https://github.com/tylerfallon' },
-	                  'Github'
-	                )
-	              )
-	            )
-	          )
-	        )
-	      ),
 	      React.createElement(
 	        'section',
 	        { className: 'main-content cf' },
@@ -27825,58 +27860,15 @@
 	            )
 	          )
 	        )
-	      ),
-	      React.createElement(
-	        'footer',
-	        { className: 'footer' },
-	        React.createElement(
-	          'div',
-	          { className: 'inside cf' },
-	          React.createElement(
-	            'nav',
-	            { className: 'footer-nav cf' },
-	            React.createElement(
-	              'ul',
-	              null,
-	              React.createElement(
-	                'li',
-	                { className: 'selected' },
-	                React.createElement(
-	                  'a',
-	                  { href: 'index.html' },
-	                  'Portfolio'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: 'about.html' },
-	                  'About'
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                null,
-	                React.createElement(
-	                  'a',
-	                  { href: 'mailto:tylermfallonh@gmail.com' },
-	                  'Contact'
-	                )
-	              )
-	            )
-	          )
-	        )
 	      )
 	    );
 	  }
 	});
 
-	module.exports = Search;
+	module.exports = Portfolio;
 
 /***/ },
-/* 238 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27884,8 +27876,8 @@
 	var React = __webpack_require__(1);
 	var Router = __webpack_require__(172);
 
-	var Main = React.createClass({
-	  displayName: 'Main',
+	var Contact = React.createClass({
+	  displayName: 'Contact',
 
 	  render: function render() {
 
@@ -27893,253 +27885,15 @@
 	      'div',
 	      { className: 'main-container' },
 	      React.createElement(
-	        'div',
+	        'p',
 	        null,
-	        React.createElement(
-	          'header',
-	          { className: 'header' },
-	          React.createElement(
-	            'div',
-	            { className: 'inside' },
-	            React.createElement(
-	              'div',
-	              { className: 'logo-area-inside' },
-	              React.createElement(
-	                'a',
-	                { href: 'index.html', className: 'logo' },
-	                'Tyler Fallon'
-	              ),
-	              React.createElement(
-	                'h4',
-	                { className: 'about-me-tyler' },
-	                'Full Stack Web Developer'
-	              )
-	            ),
-	            React.createElement('div', { className: 'triangle' }),
-	            React.createElement(
-	              'nav',
-	              { className: 'main-nav' },
-	              React.createElement(
-	                'a',
-	                { href: 'index.html', className: 'alt-logo' },
-	                'Tyler Fallon'
-	              ),
-	              React.createElement(
-	                'ul',
-	                null,
-	                React.createElement(
-	                  'li',
-	                  { className: 'selected' },
-	                  React.createElement(
-	                    'a',
-	                    { href: '#/search' },
-	                    'Portfolio'
-	                  )
-	                ),
-	                React.createElement(
-	                  'li',
-	                  null,
-	                  React.createElement(
-	                    'a',
-	                    { href: '#/saved' },
-	                    'Contact'
-	                  )
-	                ),
-	                React.createElement(
-	                  'li',
-	                  null,
-	                  React.createElement(
-	                    'a',
-	                    { href: 'https://github.com/tylerfallon' },
-	                    'Github'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'section',
-	          { className: 'main-content cf' },
-	          React.createElement(
-	            'h1',
-	            { className: 'portfolio-title' },
-	            'C',
-	            React.createElement(
-	              'span',
-	              null,
-	              'ontact'
-	            )
-	          ),
-	          React.createElement(
-	            'div',
-	            { className: 'inside-portfolio' },
-	            React.createElement(
-	              'ul',
-	              { className: 'portfolio-items' },
-	              React.createElement(
-	                'li',
-	                { id: 'demuxed', className: 'portfolio-item multiple cf' },
-	                React.createElement(
-	                  'div',
-	                  { className: 'text' },
-	                  React.createElement(
-	                    'h3',
-	                    null,
-	                    'Questive'
-	                  ),
-	                  React.createElement(
-	                    'ul',
-	                    { className: 'skills' },
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Branding'
-	                    ),
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Web design'
-	                    ),
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Illustration'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'p',
-	                    null,
-	                    'Description here'
-	                  ),
-	                  React.createElement(
-	                    'a',
-	                    { href: 'https://link.com/', className: 'action' },
-	                    'Visit site'
-	                  )
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                { id: 'love-hate', className: 'portfolio-item multiple cf' },
-	                React.createElement(
-	                  'div',
-	                  { className: 'text' },
-	                  React.createElement(
-	                    'h3',
-	                    null,
-	                    'Impulsion.io'
-	                  ),
-	                  React.createElement(
-	                    'ul',
-	                    { className: 'skills' },
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Backend Web Development'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'p',
-	                    null,
-	                    'Description here'
-	                  ),
-	                  React.createElement(
-	                    'a',
-	                    { href: 'https://link.com/', className: 'action' },
-	                    'Visit site'
-	                  )
-	                )
-	              ),
-	              React.createElement(
-	                'li',
-	                { id: 'mixture', className: 'portfolio-item multiple cf' },
-	                React.createElement(
-	                  'div',
-	                  { className: 'text' },
-	                  React.createElement(
-	                    'h3',
-	                    null,
-	                    'Proconnect'
-	                  ),
-	                  React.createElement(
-	                    'ul',
-	                    { className: 'skills' },
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Web design'
-	                    ),
-	                    React.createElement(
-	                      'li',
-	                      null,
-	                      'Frontend Web Development'
-	                    )
-	                  ),
-	                  React.createElement(
-	                    'p',
-	                    null,
-	                    'Description here'
-	                  ),
-	                  React.createElement(
-	                    'a',
-	                    { href: 'http://mixture.io/', className: 'action' },
-	                    'View site'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        React.createElement(
-	          'footer',
-	          { className: 'footer' },
-	          React.createElement(
-	            'div',
-	            { className: 'inside cf' },
-	            React.createElement(
-	              'nav',
-	              { className: 'footer-nav cf' },
-	              React.createElement(
-	                'ul',
-	                null,
-	                React.createElement(
-	                  'li',
-	                  { className: 'selected' },
-	                  React.createElement(
-	                    'a',
-	                    { href: 'index.html' },
-	                    'Portfolio'
-	                  )
-	                ),
-	                React.createElement(
-	                  'li',
-	                  null,
-	                  React.createElement(
-	                    'a',
-	                    { href: 'about.html' },
-	                    'About'
-	                  )
-	                ),
-	                React.createElement(
-	                  'li',
-	                  null,
-	                  React.createElement(
-	                    'a',
-	                    { href: 'mailto:tylermfallonh@gmail.com' },
-	                    'Contact'
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
+	        'Hi'
 	      )
 	    );
 	  }
 	});
 
-	module.exports = Main;
+	module.exports = Contact;
 
 /***/ }
 /******/ ]);

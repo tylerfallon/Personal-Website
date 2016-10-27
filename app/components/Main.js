@@ -6,28 +6,35 @@ var Main = React.createClass({
 		return(
 			<div className="main-container">
 				<div className="container">
-					{/*
-					<nav className="navbar navbar-default" role="navigation">
-						<div className="container-fluid">
-							<div className="navbar-header">
-								<button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-									<span className="sr-only">Toggle navigation</span>
-									<span className="icon-bar"></span>
-									<span className="icon-bar"></span>
-									<span className="icon-bar"></span>
-								</button>
-								<a className="navbar-brand" href="#">Tyler Fallon</a>
-							</div>
-							<div className="collapse navbar-collapse navbar-ex1-collapse">
-								<ul className="nav navbar-nav navbar-right">
-									<li><a href="#/search">Porfolio</a></li>
-									<li><a href="#/saved">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					*/}
+				<header className="header">
+          <div className="inside">
+            <div className="logo-area-inside">
+              <a href="#/portfolio" className="logo">Tyler Fallon</a>
+              <h4 className="about-me-tyler">Full Stack Web Developer</h4>
+               <img src='./images/tylerfallonheadshot.png' width='50%'/>
+            </div>
+            <div className="triangle" />
+            <nav className="main-nav">
+              <a href="index.html" className="alt-logo">Tyler Fallon</a>
+              <ul>
+                <li><a href="#/portfolio">Portfolio</a></li>
+                <li><a href="#/contact">Contact</a></li>
+                <li><a href="https://github.com/tylerfallon">Github</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>    
 				{this.props.children}
+        <footer className="footer">
+          <div className="inside cf">
+            <nav className="footer-nav cf">
+              <ul>
+                <li><a href="#/portfolio">Portfolio</a></li>
+                <li><a href="#/contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
 				</div>
 			</div>
 		)
